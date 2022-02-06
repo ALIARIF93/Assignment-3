@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: 10vh 60vh 20vh 10vh;
+  row-gap: 50px;
+  grid-template-areas: "header" "main" "sponsors" "footer";
+}
+header {
+  display: grid;
+  grid-area: header;
+  grid-template-columns: 2fr 8fr;
+
+  column-gap: 50px;
+  grid-template-areas: "logo menu";
+}
+
+.logo {
+  display: grid;
+  grid-area: logo;
+  justify-content: center;
+  align-content: center;
+  border: 1px dotted black;
+}
+.Menu {
+  display: grid;
+  grid-area: menu;
+  align-content: center;
+  justify-content: end;
+  padding-right: 2rem;
+  border: 1px dotted black;
+}
+
+main {
+  display: grid;
+  grid-area: main;
+  grid-template-columns: 8fr 2fr;
+  column-gap: 50px;
+  grid-template-areas: "main aside";
+}
+
+.main-section {
+  display: grid;
+  grid-area: main;
+  column-gap: 50px;
+  border: 1px dotted black;
+}
+.aside {
+  display: grid;
+  grid-area: aside;
+  border: 1px dotted black;
+}
+.sponsors {
+  display: grid;
+  grid-area: sponsors;
+  justify-content: center;
+  align-content: center;
+  border: 1px dotted black;
+}
+footer {
+  display: grid;
+  grid-area: footer;
+  height: 100%;
+  width: 100%;
+  justify-content: start;
+  align-content: center;
+  border: 1px dotted black;
+}
